@@ -10,3 +10,6 @@ class DataOutputContext:
 
     def execute_output(self, records: list[dict]) -> None:
         self._strategy.output(records)
+
+    def execute_view(self) -> None:
+        self._strategy.view()

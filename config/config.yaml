@@ -1,5 +1,5 @@
 output:
-  strategy: kafka # Options: console | kafka | redis
+  strategy: console # Options: console | kafka | redis
   limit: 50 # Number of records to process
 
 data:
