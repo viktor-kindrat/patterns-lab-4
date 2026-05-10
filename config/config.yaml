@@ -1,0 +1,16 @@
+output:
+  strategy: console  # Options: console | kafka | redis
+  limit: 50          # Number of records to process
+
+data:
+  url: "https://opendata.utah.gov/api/views/trgz-4r9d/rows.csv?accessType=DOWNLOAD"
+  file: "data/police_cases.csv"
+
+kafka:
+  bootstrap_servers: "localhost:9092"
+  topic: "police-cases"
+
+redis:
+  host: "localhost"
+  port: 6379
+  key_prefix: "police_case"
