@@ -1,6 +1,6 @@
 output:
-  strategy: console  # Options: console | kafka | redis
-  limit: 50          # Number of records to process
+  strategy: kafka # Options: console | kafka | redis
+  limit: 50 # Number of records to process
 
 data:
   url: "https://opendata.utah.gov/api/views/trgz-4r9d/rows.csv?accessType=DOWNLOAD"
